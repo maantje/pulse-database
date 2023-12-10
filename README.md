@@ -1,6 +1,6 @@
 # Database status card for Laravel Pulse
 
-Get real-time insights into the status of your dabase
+Get real-time insights into the status of your database
 
 ## Example
 
