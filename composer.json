@@ -1,6 +1,7 @@
 {
     "name": "maantje/pulse-database",
     "description": "A Laravel Pulse card for database status",
+    "keywords": ["laravel", "database", "database-status"],
     "type": "library",
     "license": "MIT",
     "authors": [
