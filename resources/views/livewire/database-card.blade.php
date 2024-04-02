@@ -51,7 +51,7 @@
                             @foreach($values as $value)
                                 <div class="flex flex-col justify-center @sm:block">
                                 <span class="text-xl uppercase font-bold text-gray-700 dark:text-gray-300 tabular-nums">
-                                    {{ $connection->$value }}
+                                    {{ \Illuminate\Support\Number::format($connection->$value) }}
                                 </span>
                                     <span class="text-xs uppercase font-bold text-gray-500 dark:text-gray-400">
                                     {{ str_replace('_', ' ', ucfirst($value)) }}
