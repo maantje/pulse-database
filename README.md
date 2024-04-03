@@ -18,6 +18,8 @@ composer require maantje/pulse-database
 
 In your `pulse.php` configuration file, register the DatabaseRecorder with the desired settings:
 
+Uncertain about the available values? You can execute `show status` against your database to view all the options at your disposal.
+
 ```php
 return [
     // ...
