@@ -2,14 +2,11 @@
 
 namespace Maantje\Pulse\Database\Recorders;
 
-use Adoy\FastCGI\Client;
 use Illuminate\Config\Repository;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Support\Str;
-use JsonException;
 use Laravel\Pulse\Events\SharedBeat;
 use Laravel\Pulse\Pulse;
-use RuntimeException;
 
 class DatabaseRecorder
 {
@@ -31,12 +28,8 @@ class DatabaseRecorder
         //
     }
 
-    /**
-     * @throws JsonException
-     */
     public function record(SharedBeat $event): void
     {
-
         $class = self::class;
 
         foreach ($this->config->get('pulse.recorders.'.self::class.'.connections', []) as $connectionName => $config) {
